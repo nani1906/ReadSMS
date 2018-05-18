@@ -121,12 +121,9 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-
-
-
-
-
     private String parseCode(String message) {
+        // Here the code can catch only 4 digits from the message.
+
         Pattern p = Pattern.compile("\\b\\d{4}\\b");
         Matcher m = p.matcher(message);
         String code = "";
